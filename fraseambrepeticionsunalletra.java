@@ -2,19 +2,19 @@ import java.util.Scanner;
 public class fraseambrepeticionsunalletra {
     public static void main(String[] args) {
         Scanner lectura = new Scanner (System.in);
-        int comptador = -1;
+        int comptador = 0;
         int newcontador = 0;
-        String frase = "";
-        char lletra = 'a';
+        String frase;
+        char lletra;
         boolean fi = false;
         String mes = "";
 
         System.out.println("Escriu una lletra: ");
         lletra = lectura.nextLine().charAt(0);
         while (fi != true) { 
-            System.out.println("Escriu una frase");
+            System.out.println("Escriu una frase: (Escriu fi per acabar) ");
             frase = lectura.nextLine();
-            if(frase == "fi"){
+            if(frase.equals("fi")){
                 fi = true;
             }
             else{
